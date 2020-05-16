@@ -1,16 +1,17 @@
-# ecodeasapp
+# Ecodeasapp
 
-A new Flutter project.
+App móvil oficial de Ecodeas.
 
-## Getting Started
+Ecodeas tiene como objetivo formar parte de la vida cotidiana de todos y sólo de esta
+forma se puede acercar el reciclaje a nuestras manos..
+Esta app te permite consultar las ideas de reciclaje que entre todos los usuarios se
+cuelgan en la app, fomentando el reciclaje en común y de una forma más productiva,
+varias cabezas piensan mejor que una.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Información de interés.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+App creada con Flutter.
+Desarrollador: Jonatan Montesdeoca González.
+Comienzo del desarrollo: 17/05/2020.
+Cliente: CanaryPixel

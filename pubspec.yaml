@@ -26,6 +26,11 @@ dependencies:
   auto_size_text: ^2.1.0
   outline_material_icons: ^0.1.1
   rxdart: ^0.24.1
+  font_awesome_flutter: ^8.8.1
+  flutter_country_picker: ^0.1.6
+
+
+
   
 dev_dependencies:
   flutter_test:
@@ -38,11 +43,16 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   fonts:
-    - family: LEMONMILK     
+    - family: Boonbaan
       fonts:
-      - asset: assets/fonts/LEMONMILK-Regular.ttf
-      - asset: assets/fonts/LEMONMILK-Bold.ttf
+      - asset: assets/fonts/BoonBaan-Regular.ttf
+      - asset: assets/fonts/BoonBaan-Bold.ttf
 
+  assets:
+   - assets/images/ecodeasLogo-Cuadrado.png
+   - assets/images/ecodeasLogo.png    
+   - assets/images/ecodeas-globo.png
+   - assets/images/question.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

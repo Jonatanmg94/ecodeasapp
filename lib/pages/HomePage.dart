@@ -1,8 +1,12 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:ecodeasapp/blocs/PageBloc.dart';
 import 'package:ecodeasapp/pages/AccountPage.dart';
+import 'package:ecodeasapp/pages/EcodeasPage.dart';
+import 'package:ecodeasapp/pages/NewsPage.dart';
 import 'package:flutter/material.dart';
 import 'package:outline_material_icons/outline_material_icons.dart';
+
+import 'MarketPage.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -84,16 +88,16 @@ class _HomePageState extends State<HomePage> {
     return StreamBuilder(
       initialData: 0,
       stream: _currentPageBloc.getPageStream,
-      builder: (BuildContext context, AsyncSnapshot<int> snapshot) {        
+      builder: (BuildContext context, AsyncSnapshot<int> snapshot) {      
         switch( snapshot.data ){
           case 0:
-          return Container(color: Colors.red);
+          return EcodeasPage();
           break;
           case 1:
-          return Container(color: Colors.blue);
+          return MarketPage();
           break;
           case 2:
-          return Container(color: Colors.yellow);
+          return NewsPage();
           break;
           case 3:
           return AccountPage();
@@ -118,7 +122,7 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(Icons.lightbulb_outline),
               title: AutoSizeText(
                 'Ecodeas',
-                style: TextStyle(fontFamily: 'LEMONMILK', fontSize: 12),
+                style: TextStyle(fontFamily: 'Boonbaan', fontSize: 12, fontWeight: FontWeight.bold),
                 maxLines: 1,
               )
             ),
@@ -126,7 +130,7 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(OMIcons.localMall),
               title: AutoSizeText(
                 'Mercado',
-                style: TextStyle(fontFamily: 'LEMONMILK', fontSize: 12),
+                style: TextStyle(fontFamily: 'Boonbaan', fontSize: 12, fontWeight: FontWeight.bold),
                 maxLines: 1,
               )
             ),
@@ -134,7 +138,7 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(OMIcons.libraryBooks),
               title: AutoSizeText(
                 'Noticias',
-                style: TextStyle(fontFamily: 'LEMONMILK', fontSize: 12),
+                style: TextStyle(fontFamily: 'Boonbaan', fontSize: 12, fontWeight: FontWeight.bold),
                 maxLines: 1,
               )
             ),
@@ -142,7 +146,7 @@ class _HomePageState extends State<HomePage> {
               icon: Icon(OMIcons.accountCircle),
               title: AutoSizeText(
                 'Mi cuenta',
-                style: TextStyle(fontFamily: 'LEMONMILK', fontSize: 12),
+                style: TextStyle(fontFamily: 'Boonbaan', fontSize: 12, fontWeight: FontWeight.bold),
                 maxLines: 1,
               )
             ),
